@@ -1,0 +1,21 @@
+<!doctype html><html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:"IM";src:url(assets/Inter-500.woff2) format("woff2")}
+@font-face{font-family:"IB";src:url(assets/Inter-600.woff2) format("woff2")}
+@font-face{font-family:"MK";src:url(assets/PermMarker.woff2) format("woff2")}
+@font-face{font-family:"HW";src:url(assets/GochiHand.woff2) format("woff2")}
+html,body{margin:0;background:#000}#stage{position:relative;width:1080px;height:1920px;overflow:hidden}svg{position:absolute;left:0;top:0}
+</style></head><body><div id="stage"><svg id="sv" width="1080" height="1920" viewBox="0 0 1080 1920"><defs>
+ <filter id="ink0" x="-2%" y="-2%" width="104%" height="104%"><feTurbulence type="turbulence" baseFrequency="0.018" numOctaves="2" seed="2" result="t"/><feDisplacementMap in="SourceGraphic" in2="t" scale="4.5" xChannelSelector="R" yChannelSelector="G"/></filter>
+ <filter id="ink1" x="-2%" y="-2%" width="104%" height="104%"><feTurbulence type="turbulence" baseFrequency="0.018" numOctaves="2" seed="7" result="t"/><feDisplacementMap in="SourceGraphic" in2="t" scale="4.5" xChannelSelector="R" yChannelSelector="G"/></filter>
+ <filter id="ink2" x="-2%" y="-2%" width="104%" height="104%"><feTurbulence type="turbulence" baseFrequency="0.018" numOctaves="2" seed="13" result="t"/><feDisplacementMap in="SourceGraphic" in2="t" scale="4.5" xChannelSelector="R" yChannelSelector="G"/></filter>
+ <!-- colored-pencil hatching for shaded sides, and a softer wash hatch -->
+ <pattern id="hatch" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><path d="M0,4.5 H9" stroke="#615754" stroke-width="1.3" opacity=".22"/></pattern>
+ <pattern id="hatch2" width="13" height="13" patternUnits="userSpaceOnUse" patternTransform="rotate(28)"><path d="M0,6 H8" stroke="#615754" stroke-width="1" opacity=".12"/></pattern>
+ <filter id="fish" filterUnits="userSpaceOnUse" x="0" y="0" width="1080" height="1920" color-interpolation-filters="sRGB"><feImage href="assets/fisheye_map.png" x="0" y="0" width="1080" height="1920" preserveAspectRatio="none" result="m"/><feDisplacementMap id="fishD" in="SourceGraphic" in2="m" scale="0" xChannelSelector="R" yChannelSelector="G"/></filter>
+ <filter id="rack" x="-5%" y="-5%" width="110%" height="110%"><feGaussianBlur id="rackB" stdDeviation="0"/></filter>
+ <radialGradient id="lensV" cx=".5" cy=".5" r=".5"><stop offset=".72" stop-color="#2B2522" stop-opacity="0"/><stop offset="1" stop-color="#2B2522" stop-opacity=".55"/></radialGradient>
+ <radialGradient id="spot" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#FFF6D6" stop-opacity=".95"/><stop offset="1" stop-color="#FFF6D6" stop-opacity="0"/></radialGradient>
+ <radialGradient id="sky" cx=".5" cy=".25" r=".95"><stop offset="0" stop-color="#F8F5F1"/><stop offset="1" stop-color="#E7EEFA"/></radialGradient>
+ <radialGradient id="shade"><stop offset="0" stop-color="#615754" stop-opacity=".22"/><stop offset="1" stop-color="#615754" stop-opacity="0"/></radialGradient>
+</defs><g id="g"></g></svg></div>

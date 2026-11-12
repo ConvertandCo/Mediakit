@@ -1,0 +1,37 @@
+<!doctype html><html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:"ID";src:url(assets/Inter-300.woff2) format("woff2")}
+@font-face{font-family:"IR";src:url(assets/Inter-400.woff2) format("woff2")}
+@font-face{font-family:"IM";src:url(assets/Inter-500.woff2) format("woff2")}
+@font-face{font-family:"IB";src:url(assets/Inter-600.woff2) format("woff2")}
+@font-face{font-family:"LB";src:url(assets/SpaceGrotesk-600.woff2) format("woff2")}
+@font-face{font-family:"HW";src:url(assets/GochiHand.woff2) format("woff2")}
+@font-face{font-family:"MK";src:url(assets/PermMarker.woff2) format("woff2")}
+@font-face{font-family:"SF";src:url(assets/LibreBask.woff2) format("woff2")}
+html,body{margin:0;background:#000}
+#stage{position:relative;width:1080px;height:1920px;overflow:hidden}
+svg{position:absolute;left:0;top:0}
+</style></head><body><div id="stage">
+<svg id="sv" width="1080" height="1920" viewBox="0 0 1080 1920">
+<defs>
+ <linearGradient id="fr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f3f3f4"/><stop offset=".3" stop-color="#d9dadc"/><stop offset=".52" stop-color="#8d8e91"/><stop offset=".7" stop-color="#e4e5e7"/><stop offset="1" stop-color="#f0f0f1"/></linearGradient>
+ <radialGradient id="img" cx=".3" cy=".2" r="1.1"><stop offset="0" stop-color="#FAF7EE"/><stop offset=".5" stop-color="#EDE6D3"/><stop offset="1" stop-color="#D8CDB2"/></radialGradient>
+ <filter id="cut" x="-25%" y="-25%" width="150%" height="150%"><feMorphology in="SourceAlpha" operator="dilate" radius="7" result="d"/><feFlood flood-color="#fff"/><feComposite in2="d" operator="in" result="w"/>
+  <feGaussianBlur in="d" stdDeviation="9" result="b"/><feOffset in="b" dx="7" dy="13" result="o"/><feFlood flood-color="#000" flood-opacity=".38"/><feComposite in2="o" operator="in" result="sh"/>
+  <feMerge><feMergeNode in="sh"/><feMergeNode in="w"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <filter id="shd" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="6" dy="10" stdDeviation="8" flood-opacity=".35"/></filter>
+ <!-- printed look: slight softness over the whole picture -->
+ <filter id="soft" x="0" y="0" width="100%" height="100%"><feGaussianBlur stdDeviation="0.7"/></filter>
+ <!-- fine diagonal crosshatch screen (two line screens at +/-45 degrees) -->
+ <pattern id="h1" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="1.6" fill="#000" opacity=".16"/><rect y="2.5" width="5" height="1" fill="#fff" opacity=".07"/></pattern>
+ <pattern id="h2" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="5" height="1.6" fill="#000" opacity=".12"/></pattern>
+ <linearGradient id="ti" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#6c6e72"/><stop offset=".04" stop-color="#e8e9eb"/><stop offset=".1" stop-color="#9a9ca0"/><stop offset=".5" stop-color="#c4c6c9"/><stop offset=".9" stop-color="#8e9094"/><stop offset=".96" stop-color="#eceef0"/><stop offset="1" stop-color="#5a5c60"/></linearGradient>
+ <linearGradient id="th" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4a4c50"/><stop offset=".6" stop-color="#232427"/><stop offset="1" stop-color="#121314"/></linearGradient>
+ <linearGradient id="btn" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5d5f63"/><stop offset=".5" stop-color="#d7d8da"/><stop offset="1" stop-color="#77797d"/></linearGradient>
+ <linearGradient id="gl" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".30"/><stop offset=".28" stop-color="#fff" stop-opacity=".10"/><stop offset=".29" stop-color="#fff" stop-opacity="0"/><stop offset=".62" stop-color="#fff" stop-opacity="0"/><stop offset=".63" stop-color="#fff" stop-opacity=".06"/><stop offset=".7" stop-color="#fff" stop-opacity="0"/></linearGradient>
+ <linearGradient id="bn" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FF5B2E"/><stop offset="1" stop-color="#F4A93A"/></linearGradient>
+ <clipPath id="scr"><rect x="14" y="14" width="400" height="790" rx="52"/></clipPath>
+</defs>
+<g id="g"></g></svg>
+</div>
+<script src="col_lib.js"></script>
