@@ -10,5 +10,5 @@ d=subprocess.run(['node','-e',f"const {{chromium}}=require('playwright');(async(
 D=json.loads(d.strip().splitlines()[-1]);dur=D['END']
 subprocess.run([sys.executable,os.path.join(ROOT,'pipeline','mix.py'),rid,json.dumps(D['SFX']),str(dur),''],check=True)
 fn=os.path.join(OUT,'final',f"ConvertCo_{rid}_{spec['title']}_v{spec.get('version',1)}_noVO.mp4")
-subprocess.run(['ffmpeg','-y','-loglevel','error','-f','concat','-safe','0','-i',os.path.join(OUT,f'{rid}.list'),'-i',os.path.join(OUT,rid,'mix.wav'),'-map','0:v','-map','1:a','-c:v','copy','-af','alimiter=limit=0.84','-c:a','aac','-b:a','192k','-t',str(dur),'-movflags','+faststart',fn],check=True,cwd=OUT)
+subprocess.run(['ffmpeg','-y','-loglevel','error','-f','concat','-safe','0','-i',os.path.join(OUT,f'{rid}.list'),'-i',os.path.join(OUT,rid,'mix.wav'),'-map','0:v','-map','1:a']+(['-vf','rgbashift=rh=-1:bh=1,format=yuv420p','-c:v','libx264','-preset','medium','-crf','17'] if spec.get('aberration') else ['-c:v','copy'])+['-af','alimiter=limit=0.84','-c:a','aac','-b:a','192k','-t',str(dur),'-movflags','+faststart',fn],check=True,cwd=OUT)
 print('REMIXED',fn)
