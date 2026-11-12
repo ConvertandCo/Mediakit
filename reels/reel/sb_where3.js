@@ -71,7 +71,7 @@ function scene(t){let w=skyBg('#F3EBDD','#E9DCC6');
  if(t>=K.out+0.4){const hk=E.io(seg(t,K.tap-0.6,K.tap)),pr=t>=K.tap&&t<K.tap+0.25?1:0;w+=handAt(lerp(820,600,hk),lerp(buyY+260,buyY-6,hk)+pr*8,28,0.8);
   if(t>=K.tap+0.1)w+=tag(820,buyY+90,'added to cart ✓',SAGE2,pop(t,K.tap+0.1),-3,34);}
  if(t>=K.cta){const k=pop(t,K.cta);w+=`<g transform="translate(540,1470) scale(${f2(clamp(k,0,1.15))})">`+R(-300,-58,600,116,CORAL,58,4)+T(0,18,50,'Comment STORE',{f:'HW',c:CREAM})+'</g>';}
- w+=T(540,1850,22,'Tip shared by Shopify merchants, Aug 2026 · no numbers published · demo store',{f:'IM',c:'#8a7a6a'});
+ w+=T(540,1850,22,'Tip shared by Shopify merchants, Aug 2026',{f:'IM',c:'#8a7a6a'});
  // camera: full phone → close-up on the answers → back out
  const zi=E.io(seg(t,K.zoom,K.zoom+0.7)),zo=E.io(seg(t,K.out,K.out+0.7)),zk=zi*(1-zo);
  const z=lerp(1.15,1.75,zk),cy=lerp(860,SY+546+140,zk);

@@ -25,7 +25,9 @@ Over budget = cut, not speed up the voice.
 
 ## Pass 1: Expert review (CRO strategist + short-form editor)
 Score each item PASS / FIX, with the fix written in.
-1. **Fact check.** Every number has a named source and date in the script notes. Illustrative figures are labelled "example" on screen. Demo stores are labelled demo.
+1. **Fact check.** Every number has a named source and date in the script notes.
+
+**Rule (set by Febin, 12 Nov 2026): no "demo", "demo store", "illustrative" or "example" labels anywhere in a reel or its caption.** The reels are animated, so viewers know the stores are not real. The honesty rules still apply: never present a store as a client or a result as ours, never invent numbers, and keep the source line for every statistic.
 2. **One message** stated in one sentence.
 3. **Hook (0–2 s).** Shows WHAT the reel is about, visually and in words, by second 2. Specific (a number, a ₹ price, a named moment), not a generic question.
 4. **Turn by ~5 s.** A reversal, a "but", or a stakes line arrives before the viewer settles.
@@ -69,7 +71,7 @@ Predicted skip windows · actual skip rate · retention graph drop points · sav
 > Eight ninety-nine. She's ready to pay. … Shipping, forty-nine. … Platform fee, nineteen. … Nine sixty-seven. She's gone. In Baymard's research, forty percent of shoppers who abandoned checkout said extra costs were too high. Twelve percent couldn't even see the total up front. She wasn't upset about forty-nine rupees. She was upset she found out last. So show delivery on the product page. Put "free delivery above nine ninety-nine" right under the price. Let the last number… be the first number she saw. Save this.
 
 **Pass 1 (Expert)**
-- Fact: PASS (Baymard, updated 28 Oct 2026; prices labelled example).
+- Fact: PASS (Baymard, updated 28 Oct 2026).
 - Hook: PASS. A rising ₹ price is specific and visual.
 - Word budget: **FIX**, 85 words vs 60.
 - One number: **FIX**. "Twelve percent" dilutes "forty percent". Moved to the screen.
@@ -86,4 +88,4 @@ Predicted skip windows · actual skip rate · retention graph drop points · sav
 **v3 (58 words, ~20 s)**
 > Eight ninety-nine. She taps Buy. … Shipping, forty-nine. … Platform fee, nineteen. … Nine sixty-seven. … She's gone. Baymard found forty percent of shoppers who quit checkout blamed extra costs. She wasn't upset about forty-nine rupees. She was upset she found out last. Show delivery cost right under the price. Let the last number… be the first number she saw. Save this.
 
-Screen only: "12% couldn't see the total up front · Baymard, Oct 2026" · "Example prices".
+Screen only: "12% couldn't see the total up front · Baymard, Oct 2026".

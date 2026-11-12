@@ -82,6 +82,7 @@ if spec.get('vo') and os.path.exists(os.path.join(ROOT,spec['vo'])):
     for a,b in sorted(anchors):
         if b>prev: clean.append([a,b]);prev=b
     clean.append([END,round(max(VOLEN+0.8,prev+0.6),3)])
+    if spec.get('anchors'): clean=spec['anchors']
     anchors=clean; json.dump(anchors,open(f'{work}/anchors.json','w')); print('anchors',anchors)
 
 # 4) the page that is actually rendered

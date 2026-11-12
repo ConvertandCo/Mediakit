@@ -37,7 +37,7 @@ function s2(t){let w=skyBg('#EEF0EA','#E3E4D6');w+=P('M-1600,1330 L2800,1330 L28
  w+=bigNum(540,330,'42%',pop(t,K.stat,0.45));
  if(t>=K.judge)w+=T(540,500,40,'try to judge size from photos',{f:'HW',c:BROWN,o:seg(t,K.judge,K.judge+0.3)});
  [[K.no1,'No hand',250],[K.no2,'no scale',540],[K.no3,'no clue',830]].forEach(([a,txt,x],i)=>{w+=tag(x,1470,txt,i===2?CORAL:CREAM,pop(t,a),i%2?3:-3,38);});
- w+=T(540,1600,24,'Source: Baymard Institute, 2017 · demo product',{f:'IM',c:'#7a6a5a',o:seg(t,K.stat,K.stat+0.4)});
+ w+=T(540,1600,24,'Source: Baymard Institute, 2017',{f:'IM',c:'#7a6a5a',o:seg(t,K.stat,K.stat+0.4)});
  return cam(1.0,540,960,w);}
 // ---------- scene 3: put it in a hand ----------
 function s3(t){let w=skyBg('#F3EBDD','#E9DCC6');const k=E.outC(seg(t,K.hand,K.hand+0.6));

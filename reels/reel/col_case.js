@@ -1,5 +1,5 @@
 // ===== Reel B v2: "Closes the tab" as a detective's case board (paper collage). Timed to the script; re-time to the VO later =====
-const K={a:0,tap1:0.45,tap2:0.62,love:1.4,toB:2.0,s2:2.2,rev:3.6,toC:4.8,s3:4.8,date:6.2,str:6.4,close:7.6,stamp:7.9,rip:8.4,s5:9.2,q:9.4,send:11.0},END=13.0;
+const K={a:0,tap1:0.45,tap2:0.62,love:1.4,toB:2.0,p2:2.2,rev:3.6,toC:4.8,p3:4.8,date:6.2,str:6.4,close:7.6,stamp:7.9,rip:8.4,s5:9.2,q:9.4,send:11.0},END=13.0;
 CAP=[[0.2,'Found it on Instagram.'],[1.4,'Love it.'],[2.2,'Opens the website.'],[3.6,'No reviews.'],[4.8,'Checks their Instagram.'],[6.2,'Last post: 2023.'],[7.6,'Closes the tab.'],[9.0,'']];
 const SFX=[[0.45,'click',-22],[0.62,'click',-22],[0.66,'pop',-23],[1.4,'pop',-24],[2.0,'whoosh',-23],[2.5,'rustle',-29],[3.6,'move',-24],[3.95,'thud',-25],[4.8,'whoosh',-23],[5.2,'rustle',-29],
  [6.2,'trace',-23],[6.45,'trace',-27],[7.6,'wl',-19],[7.9,'hit',-16],[8.4,'rustle',-21],[9.2,'whoosh',-24],[9.45,'pop',-25],[11.0,'whoosh',-23],[11.15,'soft',-27]];
@@ -15,14 +15,14 @@ function igPost(t){const liked=t>=K.tap2;let s=`<rect width="400" height="790" f
  const hk=t>=K.tap2?clamp(E.bk(seg(t,K.tap2,K.tap2+0.3)),0,1.2)*(1-seg(t,K.tap2+0.6,K.tap2+0.9)):0;if(hk>0)s+=`<g opacity=".95">${heartP(200,340,hk*2.4,'#fff')}</g>`;
  s+=`<g transform="translate(36,586) scale(.55)"><path d="M0,30 C-50,-10 -40,-60 0,-30 C40,-60 50,-10 0,30 Z" fill="${liked?RED:'none'}" stroke="${liked?RED:INK}" stroke-width="6"/></g>`+T(24,650,18,liked?'1,205 likes':'1,204 likes',{f:'IB',c:INK});
  s+=T(24,680,17,'Hand-poured clay pot candles.',{f:'IR',c:INK})+`<rect x="100" y="706" width="200" height="50" rx="25" fill="${INK}"/>`+T(200,738,19,'Shop now ›',{f:'IB',c:'#fff',a:'middle'});
- return s+demoBadge(280,74);}
+ return s;}
 function browser(t){let s=stick(`<rect x="-380" y="-500" width="760" height="1000" fill="#fff"/>`)+`<rect x="-380" y="-500" width="760" height="70" fill="#ECEAE4"/>`+
  [0,1,2].map(i=>`<circle cx="${-345+i*28}" cy="-465" r="9" fill="${['#E86B5F','#F4C14F','#5FC26A'][i]}"/>`).join('')+`<rect x="-240" y="-484" width="560" height="40" rx="20" fill="#fff"/>`+T(40,-457,20,'wickandclay.store',{f:'IR',c:'#666',a:'middle'});
  s+=`<rect x="-340" y="-400" width="320" height="320" fill="#EBD9BB"/>`+candleP(-180,-210,1.0);
  s+=T(10,-350,40,'Clay Pot Candle',{f:'IB',c:INK})+T(10,-295,38,'₹1,299',{f:'IB',c:OR})+`<rect x="10" y="-250" width="330" height="70" rx="10" fill="${INK}"/>`+T(175,-205,26,'Add to cart',{f:'IB',c:'#fff',a:'middle'});
  s+=`<rect x="-340" y="-30" width="680" height="3" fill="#e5e1d8"/>`+revBlock(0,0,1);
  for(let i=0;i<5;i++)s+=`<rect x="-340" y="${250+i*44}" width="${i%2?520:680}" height="16" rx="6" fill="#EEEAE2"/>`;
- return s+demoBadge(-370,-420);}
+ return s;}
 function revBlock(x,y,s){let r=`<g transform="translate(${x},${y}) scale(${s})">`+T(-340,40,34,'Customer reviews (0)',{f:'IB',c:INK});
  for(let i=0;i<5;i++){let d='';for(let j=0;j<10;j++){const a=-Math.PI/2+j*Math.PI/5,rr=j%2?11:24;d+=(j?'L':'M')+f1(-318+i*58+Math.cos(a)*rr)+','+f1(100+Math.sin(a)*rr);}r+=`<path d="${d}Z" fill="#EEE9DF" stroke="#b9b2a5" stroke-width="2.5"/>`;}
  return r+T(-340,175,30,'No reviews yet',{f:'IB',c:INK})+T(-340,212,22,'Be the first to write a review',{f:'IR',c:'#777'})+'</g>';}
