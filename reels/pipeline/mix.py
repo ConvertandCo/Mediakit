@@ -2,7 +2,7 @@
 """Mix sound effects (+ optional voiceover) for one reel. Called by build.py.
    mix.py <rid> '<json [[t,sound,dB],...]>' <duration> [vo.wav]
 Sounds: click, click1, soft, pop (gentle), whoosh, wl (low whoosh, own stem, not ducked), move, chop, count, accept,
-        thud, coin, rustle, snip, trace, hit, bub, ting1..ting4, impact, kick, ping.
+        thud, coin, rustle, shutter, amb, step, snip, trace, hit, bub, ting1..ting4, impact, kick, ping.
 House rules baked in: no music; SFX duck up to 50% under the voice; target about -15 LUFS."""
 import sys, os, json, numpy as np, subprocess
 from scipy.io import wavfile
@@ -44,6 +44,17 @@ t=tt(0.7);f=90*np.exp(-t*6)+38;S['hit']=st(np.sin(2*np.pi*np.cumsum(f)/SR)*np.ex
 t=tt(0.12);S['bub']=st(np.sin(2*np.pi*np.cumsum(500+2600*t/0.12)/SR)*np.sin(np.pi*t/0.12))
 for k,fr in enumerate((1568,1760,1976,2349),1):
     t=tt(0.32);x=np.sin(2*np.pi*fr*t)*np.exp(-t*13)+0.25*np.sin(2*np.pi*2*fr*t)*np.exp(-t*22);S[f'ting{k}']=st(x*np.minimum(1,t*900))
+# painted-style extras: shutter rattle, lane ambience, soft footstep
+x=np.zeros(int(1.0*SR))
+for k in range(26):
+    a=0.9*(k/26)**0.8;i=int(a*SR);m=int(0.025*SR);x[i:i+m]+=sosfilt(sos('bandpass',[1500,6000]),rng.standard_normal(m))*np.exp(-np.arange(m)/SR*120)*(0.5+0.5*rng.random())
+t=tt(1.0);x+=0.25*sosfilt(sos('bandpass',[300,1800]),rng.standard_normal(len(t)))*np.sin(np.pi*t)**2;S['shutter']=st(x)
+t=tt(26.0);n=sosfilt(sos('lowpass',700),rng.standard_normal(len(t)));am=0.7+0.3*np.abs(sosfilt(sos('lowpass',0.4),rng.standard_normal(len(t))))*8
+x=n*np.clip(am,0.4,1.3);x[:SR]*=np.linspace(0,1,SR);x[-SR:]*=np.linspace(1,0,SR)
+for b in rng.uniform(1,24,5):
+    i=int(b*SR);bt=tt(0.25);x[i:i+len(bt)]+=0.12*np.sin(2*np.pi*(3200+600*np.sin(2*np.pi*12*bt))*bt)*np.exp(-bt*14)
+S['amb']=st(x)
+t=tt(0.18);S['step']=st(sosfilt(sos('lowpass',500),rng.standard_normal(len(t)))*np.exp(-t*35))
 def put(x,at,g,buf):
     i=int(max(0,at)*SR)
     if i>=N:return

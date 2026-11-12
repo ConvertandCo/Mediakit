@@ -1,0 +1,36 @@
+<!doctype html><html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:"IM";src:url(assets/Inter-500.woff2) format("woff2")}
+@font-face{font-family:"IB";src:url(assets/Inter-600.woff2) format("woff2")}
+@font-face{font-family:"HW";src:url(assets/GochiHand.woff2) format("woff2")}
+html,body{margin:0;background:#000}#stage{position:relative;width:1080px;height:1920px;overflow:hidden}svg{position:absolute;left:0;top:0}
+</style></head><body><div id="stage"><svg id="sv" width="1080" height="1920" viewBox="0 0 1080 1920"><defs>
+ <!-- painted edge wobble -->
+ <filter id="pe" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="4" result="t"/><feDisplacementMap in="SourceGraphic" in2="t" scale="5" xChannelSelector="R" yChannelSelector="G"/></filter>
+ <!-- plaster mottling: darker damp patches, keeps only inside source shape -->
+ <filter id="mot" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.0035 0.006" numOctaves="4" seed="3" result="n"/>
+  <feColorMatrix in="n" type="matrix" values="0 0 0 0 .16  0 0 0 0 .11  0 0 0 0 .07  0 0 0 -2.2 1.12" result="d"/><feComposite in="d" in2="SourceGraphic" operator="in"/></filter>
+ <filter id="mot2" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.02 0.03" numOctaves="4" seed="11" result="n"/>
+  <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 .95  0 0 0 0 .85  0 0 0 2.2 -1.15" result="d"/><feComposite in="d" in2="SourceGraphic" operator="in"/></filter>
+ <!-- flaking: small sharp light chips -->
+ <filter id="chip" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" seed="21" result="n"/>
+  <feColorMatrix in="n" type="matrix" values="0 0 0 0 .93  0 0 0 0 .86  0 0 0 0 .74  0 0 0 16 -10.4" result="d"/><feComposite in="d" in2="SourceGraphic" operator="in"/></filter>
+ <filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="14"/></filter>
+ <filter id="soft2" x="-5%" y="-5%" width="110%" height="110%"><feGaussianBlur stdDeviation="2.2"/></filter>
+ <linearGradient id="wallshade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1a110b" stop-opacity=".05"/><stop offset=".7" stop-color="#1a110b" stop-opacity=".22"/><stop offset="1" stop-color="#1a110b" stop-opacity=".45"/></linearGradient>
+ <linearGradient id="drip" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a1a10" stop-opacity=".45"/><stop offset="1" stop-color="#2a1a10" stop-opacity="0"/></linearGradient>
+ <filter id="soft4" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="4"/></filter>
+ <filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="1" seed="5" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 .5 0 0 0 0 .45 0 0 0 0 .4 0 0 0 0 .07"/></filter>
+ <linearGradient id="shaft" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFF4D6" stop-opacity=".95"/><stop offset="1" stop-color="#FFE7B0" stop-opacity=".35"/></linearGradient>
+ <radialGradient id="vig" cx=".5" cy=".46" r=".62"><stop offset=".55" stop-color="#140d0a" stop-opacity="0"/><stop offset="1" stop-color="#140d0a" stop-opacity=".62"/></radialGradient>
+ <linearGradient id="inside" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#120c09"/><stop offset="1" stop-color="#2a1c14"/></linearGradient>
+ <radialGradient id="bulb" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#FFD58A" stop-opacity=".85"/><stop offset="1" stop-color="#FFB04A" stop-opacity="0"/></radialGradient>
+</defs><g id="root"></g></svg></div>
+<script>
+const NS='http://www.w3.org/2000/svg',$=(t,a,p)=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);(p||document.getElementById('root')).appendChild(e);return e};
+const G=(a,p)=>$('g',a||{},p);
+// painted plaster block: base fill + damp patches + light bloom + chips
+function plaster(d,base,p,opt={}){const g=G({},p);$('path',{d,fill:base,filter:'url(#pe)'},g);$('path',{d,fill:'#000',filter:'url(#mot)',opacity:opt.dark??.55},g);
+ $('path',{d,fill:'#000',filter:'url(#mot2)',opacity:opt.light??.22},g);if(opt.chips!==false)$('path',{d,fill:'#000',filter:'url(#chip)',opacity:.22},g);return g}
+const ease=x=>x<0?0:x>1?1:x*x*(3-2*x),cl=(x,a=0,b=1)=>Math.max(a,Math.min(b,x)),lerp=(a,b,t)=>a+(b-a)*t,seg=(t,a,b)=>ease((t-a)/(b-a));
+</script>

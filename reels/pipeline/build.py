@@ -17,8 +17,8 @@ ROOT=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 REEL=os.path.join(ROOT,'reel'); OUT=os.path.join(REEL,'out'); os.makedirs(OUT,exist_ok=True)
 rid=sys.argv[1]; CHECK='--check' in sys.argv
 spec=json.load(open(os.path.join(ROOT,'plan','reels',f'{rid}.json')))
-head={'col':'col_head.html','sb':'sb_head.html'}[spec.get('head','col')]
-libs={'col':['col_more.js'],'sb':['sb_lib.js','sb_ext.js']}[spec.get('head','col')]
+head={'col':'col_head.html','sb':'sb_head.html','pt':'pt_head.html'}[spec.get('head','col')]
+libs={'col':['col_more.js'],'sb':['sb_lib.js','sb_ext.js'],'pt':[]}[spec.get('head','col')]
 def sh(c,**k): print('$',c if isinstance(c,str) else ' '.join(c)); return subprocess.run(c,shell=isinstance(c,str),check=True,**k)
 
 # 1) assemble the page
