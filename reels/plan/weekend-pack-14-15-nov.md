@@ -11,9 +11,9 @@ Source line: Baymard Institute, Oct 2026.
 [curious] A quick-commerce app gets there in ten minutes. You can't. [serious] In a LocalCircles festive survey, only twenty-two percent of shoppers named speed as a priority. Seventy-one percent named value. [warmly] So stop racing a rocket on a scooter. Show why it's worth the price. Give a delivery date… and keep it. [serious] They're not counting minutes. They're counting value. Comment STORE.
 Source line: LocalCircles via Business Today, Oct 2026. No quick-commerce brand on screen.
 
-3. **Will it arrive before the wedding?** (Why they didn't buy, timely), 60 words
-[curious] Forty-six lakh weddings. Forty-five days. [serious] That was CAIT's estimate for last year's season. Every guest needs a gift that arrives on time. [warmly] So show "get it by" with a real date. Offer gift wrap and a message. Post your last order date for each wedding week. [serious] A gift that might arrive late… is a gift they won't buy. Comment STORE.
-Source line: CAIT estimate, 2025 wedding season (via afaqs).
+3. **Can I send it back?** (Why they didn't buy), 60 words. Replaces "Will it arrive before the wedding?" (13 Nov).
+[curious] Before she pays, she checks one thing. … Can I send it back? [serious] LocalCircles found six in ten online shoppers had a return or refund problem last Diwali. [warmly] Put one line next to Buy: "Easy returns in seven days. Refund to UPI in forty-eight hours." Only if it's true. [serious] A clear return line… is a reason to trust you. Comment STORE.
+Source line: LocalCircles, 56,000+ responses, Diwali 2025. Style: storybook.
 
 4. **The customer who asks AI first** (Why they didn't buy), ~58 words
 [curious] Your next customer might ask an AI first. [serious] Shopify says orders from AI search grew three point three times in a year. Still small… but growing. [warmly] AI can't read your banner. It reads your text. So write what it is, who it's for, the size and the price in words, not inside images. [serious] If AI can't read it… it can't recommend it. Comment STORE.
@@ -38,7 +38,9 @@ CONFIRM before posting: the audit really delivers "three biggest fixes, in order
 
 ## Also due this weekend
 - D · They walk out (part 2): must post Sat 14 Nov (C said "part two tomorrow"). Needs VO.
-- E · Too perfect: VO pending.
+- E (replaced 13 Nov; "Too perfect" dropped). **Built for her phone** (Why they didn't buy), 60 words:
+[curious] Your next customer is in Nashik. … On a twelve-thousand-rupee phone. On patchy 4G. [serious] Redseer estimates two in three festive shoppers this year came from Tier 2 cities and smaller towns. [warmly] So test your store on a budget phone, not your laptop. Plain words, not clever ones. A clear delivery date. [serious] Build for her phone… not yours. Comment STORE.
+Source line: Redseer, festive 2026 (via Inc42). Style: painted countryside.
 
 ## Carousel bank (14)
 1. 10 fixes from this week: a checklist
