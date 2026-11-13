@@ -38,9 +38,9 @@ CONFIRM before posting: the audit really delivers "three biggest fixes, in order
 
 ## Also due this weekend
 - D · They walk out (part 2): must post Sat 14 Nov (C said "part two tomorrow"). Needs VO.
-- E (replaced 13 Nov; "Too perfect" dropped). **Built for her phone** (Why they didn't buy), 60 words:
-[curious] Your next customer is in Nashik. … On a twelve-thousand-rupee phone. On patchy 4G. [serious] Redseer estimates two in three festive shoppers this year came from Tier 2 cities and smaller towns. [warmly] So test your store on a budget phone, not your laptop. Plain words, not clever ones. A clear delivery date. [serious] Build for her phone… not yours. Comment STORE.
-Source line: Redseer, festive 2026 (via Inc42). Style: painted countryside.
+- E (replaced 13 Nov; "Too perfect" dropped). **Check it on a phone** (Shopify how-to), 59 words:
+[curious] You built your Shopify store on a laptop. … Your shoppers open it on a phone. [serious] In the theme editor, switch to mobile view. Can they see Buy without scrolling? Do the photos load fast? Does the menu make sense with a thumb? [warmly] Fix what's broken first. [serious] Build it on a laptop… but check it on a phone. Comment STORE.
+Opinion/how-to; no statistic (no primary India or Shopify mobile-share figure found). Style: painted countryside.
 
 ## Carousel bank (14)
 1. 10 fixes from this week: a checklist
