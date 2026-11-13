@@ -74,3 +74,8 @@ Opinion/how-to; no statistic (no primary India or Shopify mobile-share figure fo
 [curious] She paid. You celebrated. … And never spoke to her again. [serious] Don't stop there. Send a thank-you note. A reorder reminder when the product runs out. A WhatsApp message when the new drop lands. Shopify can send these on its own. [warmly] The first order costs you an ad. [serious] The second… just costs you a message. Comment STORE.
 - **V · The free puri at the end** (viral, peak-end rule), 45 words. File V_puri.mp3. On screen: "End every order like that." Source: Peak-end rule · Daniel Kahneman. CTA card: Send this to a founder.
 [curious] Why do you keep going back to the same paani puri wala? … [warmly] The free puri at the end. [serious] It's called the peak-end rule. We don't remember a whole experience. We remember its best moment… and how it ended. [warmly] So, end every order like that.
+
+## Final set (13 Nov, confirmed by Febin)
+Voiced: 01 Surprise, 02 Ten minutes, 05 COD ₹50, 06 Theme or custom, 07 Comment STORE, D They walk out, E Check it on a phone, J Homepage, R Retention, V Free puri.
+No voiceover: 08 Refresh, 09 ₹999, 10 Price?. Dropped: 03 Can I send it back?, 04 AI first.
+Schedule: Sat 12:30 Refresh, 16:00 Surprise, 19:00 D, 21:00 ₹999 · Sun 10:00 Puri, 12:30 Price, 16:00 Homepage, 19:00 Retention, 21:00 COD · Mon 12:30 Ten minutes, 16:00 Phone · Tue 12:30 Theme · 07 STORE held until the audit promise is confirmed.
