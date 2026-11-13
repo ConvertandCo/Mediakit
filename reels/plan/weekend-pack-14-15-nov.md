@@ -66,3 +66,11 @@ Opinion/how-to; no statistic (no primary India or Shopify mobile-share figure fo
 5. "The 8-second goldfish attention span is a myth." BBC, 2017
 6. "25.47 billion UPI payments in one month. Is UPI first on your checkout?" NPCI, Oct 2026
 7. "Visitors come. They don't buy. We find why." (Start here, already made)
+
+## Added 13 Nov (VO pending)
+- **J · They never saw your homepage** (customer journey), 60 words. File J_homepage.mp3
+[curious] You spent a week on your homepage. … Did your shoppers ever see it? [serious] They tap your Instagram ad… and land on a product page. [warmly] That page has to say who you are, why they can trust you, and where to go next. [serious] In Shopify Analytics, open sessions by landing page. … Your real homepage might be a product page. Comment STORE.
+- **R · She paid. Now what?** (retention), 60 words. File R_retention.mp3
+[curious] She paid. You celebrated. … And never spoke to her again. [serious] Don't stop there. Send a thank-you note. A reorder reminder when the product runs out. A WhatsApp message when the new drop lands. Shopify can send these on its own. [warmly] The first order costs you an ad. [serious] The second… just costs you a message. Comment STORE.
+- **V · The free puri at the end** (viral, peak-end rule), 36 words. File V_puri.mp3. On screen: "End every order like that." Source: Peak-end rule · Daniel Kahneman. CTA card: Send this to a founder.
+[curious] Why do you keep going back to the same paani puri wala? … [warmly] The free puri at the end. [serious] It's called the peak-end rule. We remember the best moment… and the last. [warmly] So, end every order like that.
