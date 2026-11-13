@@ -151,12 +151,11 @@ Format: 4:5. Slide 1 = the hook in the founder's words. Last slide = CTA. Any st
 
 ---
 
-## Single posters (7), v2 (13 Nov): founder truths + fix; CTA small at bottom: "Comment STORE for a free store audit"
-1. **Your shopper has 3 questions. Your FAQ has 30 answers.** Does it fit? When will it come? Can I return it? Answer them next to Buy.
-2. **Nobody believes "premium quality".** Write what it's made of, how it feels, and how long it lasts.
-3. **₹899 on the product page. ₹967 at checkout.** That's not a price. That's a surprise. Show delivery under the price.
-4. **Your Instagram is your trust page.** A last post from 2023 tells a new shopper the store might be closed.
-5. **COD isn't free.** Every returned parcel costs you shipping twice. Reward prepaid. *Razorpay estimates 25–30% of COD orders are returned vs 2–3% prepaid (2026)*
-6. **Before you spend ₹10,000 on ads, open your store on your phone.** Would you buy from it?
-7. **Shoppers don't leave at the homepage. They leave at the Buy button.** That's where the doubt is, so that's where the answers go. (Opinion. Safer wording: "Most doubt shows up at the Buy button.")
-Pinned "Start here" poster (posted 13 Nov) stays.
+## Single posters (7), v3 (13 Nov): fresh 2025–26 data + new ideas; CTA small: "Comment STORE for a free store audit"
+1. **This festive season, traffic was strong. Conversions were weak.** Getting the visit isn't the job. Closing it is. *Counterpoint early assessment, via Inc42, Oct 2026*
+2. **Prepaid is now 52% of D2C shipments, up from 46%.** Make UPI the easy choice at checkout. *ClickPost D2C cohort, festive 2026 sale opener*
+3. **2 in 3 festive shoppers came from Tier 2 cities and smaller towns.** Clear delivery dates. COD options. Plain language. Is your store built for them? *Redseer, festive 2026 (via Inc42)*
+4. **6 in 10 online shoppers hit a return or refund problem last Diwali.** A clear return line next to Buy is a reason to trust you. *LocalCircles, 56,000+ responses, Diwali 2025*
+5. **31% of urban shoppers planned zero festive splurges this year.** Cautious buyers need more reasons to believe, not just bigger discounts. *LocalCircles "Mood for the Consumer 2026", 67,000+ respondents*
+6. **Your product page is your salesperson. Would you hire it?** (idea, no stat)
+7. **If your ad looks better than your product page, you're paying to disappoint people.** (idea, no stat)
