@@ -151,11 +151,12 @@ Format: 4:5. Slide 1 = the hook in the founder's words. Last slide = CTA. Any st
 
 ---
 
-## Single posters (7)
-1. **42%** of shoppers try to judge size from your product photos. Add one photo in a hand. *Source: Baymard Institute, 2017*
-2. A product with **5 reviews** is **270% more likely** to be bought than one with none. *Source: Spiegel Research Center, Northwestern, 2017*
-3. A perfect **5.0** can look fake. Purchase likelihood peaks at **4.0–4.7 stars**. *Source: Spiegel Research Center, 2017*
-4. Visitors judge how your site looks in **50 milliseconds**. Make the first screen count. *Source: Lindgaard et al., 2006 (visual appeal)*
-5. The **8-second goldfish attention span** is a myth. Make pages useful, not just short. *Source: BBC, 2017*
-6. **25.47 billion** UPI payments in one month. Is UPI first on your checkout? *Source: NPCI, Oct 2026*
-7. Visitors come. They don't buy. We find why. Comment STORE. *(made, Fri 13)*
+## Single posters (7), v2 (13 Nov): founder truths + fix; CTA small at bottom: "Comment STORE for a free store audit"
+1. **Your shopper has 3 questions. Your FAQ has 30 answers.** Does it fit? When will it come? Can I return it? Answer them next to Buy.
+2. **Nobody believes "premium quality".** Write what it's made of, how it feels, and how long it lasts.
+3. **₹899 on the product page. ₹967 at checkout.** That's not a price. That's a surprise. Show delivery under the price.
+4. **Your Instagram is your trust page.** A last post from 2023 tells a new shopper the store might be closed.
+5. **COD isn't free.** Every returned parcel costs you shipping twice. Reward prepaid. *Razorpay estimates 25–30% of COD orders are returned vs 2–3% prepaid (2026)*
+6. **Before you spend ₹10,000 on ads, open your store on your phone.** Would you buy from it?
+7. **Shoppers don't leave at the homepage. They leave at the Buy button.** That's where the doubt is, so that's where the answers go. (Opinion. Safer wording: "Most doubt shows up at the Buy button.")
+Pinned "Start here" poster (posted 13 Nov) stays.
